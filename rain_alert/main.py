@@ -9,7 +9,7 @@ api_key = os.getenv("WM_KEY")
 # api_key = os.environ.get("WM_KEY")
 print(f"WM_KEY: {api_key}")
 
-# api_key="1f4e6b1e02c9d9bdc654b31c0930e2dc"
+
 print(str(api_key))
 city = 'Lagos'
 url = "https://api.openweathermap.org/data/2.5/forecast"
@@ -27,8 +27,8 @@ print(response.status_code)
 data = response.json()
 print(data)
 
-account_sid = 'AC1498b39891ab497125a713db481d9e72'
-auth_token = '61592578095c2a266e5873de4608a1eb'
+account_sid = 'TWILLIO SID'
+auth_token = 'TWILIO TOKEN'
 client = Client(account_sid, auth_token)
 
 will_rain = False
@@ -47,9 +47,9 @@ if will_rain:
     print(f'Bring an umbrella around {rain_time_str}')
 
     # message = client.messages.create(
-    #   from_='+12513354300',
+    #   from_='TWILLIO NUMBER',
     #   body=f'Bring an umbrella around {rain_time_str}',
-    #   to='+2349055789508'
+    #   to='RECEIVER'
     # )
     #
     # print(message.sid)
